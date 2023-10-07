@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title> ABC Learning Center </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/e57e6433be.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e57e6433be.js" crossorigin="anonymous"></script>
+    <script>
+    $( function() {
+      $( "#tabs" ).tabs();
+    } );
+    </script>
+</head>
+<body>
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a>
+                  <ul class="dropdown">
+                    <li><a href="cdhtml.html">HTML</a></li>
+                    <li><a href="cdcss.html">CSS</a></li>
+                    <li><a href="cdjs.html">JavaScript</a></li>
+                    <li><a href="cdjs.html">Java</a></li>
+                    <li><a href="cdph.html">Python</a></li>
+                    <li><a href="cdxls.html">Excel</a></li>
+                  </ul>
+                </li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="login.html">Log In</a></li>
+            </ul>
+          </nav>
+<!-------------------course detail----------------------->
+<div id="about">
+    <div class="container">
+        
+            <h1 class="sub-title">Course Detail</h1> <br> <br>
+            <iframe width="1520" height="670" 
+             src="https://www.youtube.com/embed/OXGznpKZ_sA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+            </div> 
+             <!-- Tab -->
+                    <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Detail</p>
+                            <p class="tab-links"onclick="opentab('education')">Course Fees</p>
+                        </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <h3>Details</h3>
+                        <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+                        <p>CSS is designed to enable the separation of content and presentation, including layout, colors, and fonts. sThis separation can improve content accessibility; provide more flexibility and control in the specification of presentation characteristics; enable multiple web pages to share formatting by specifying the relevant CSS in a separate .
+                        css file, which reduces complexity and repetition in the structural content; and enable the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.</p>
+                        <p>Separation of formatting and content also makes it feasible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen reader), and on Braille-based tactile devices. 
+                        CSS also has rules for alternate formatting if the content is accessed on a mobile device.</p>
+
+                        <a href="cscss.html" class="btn">Courses Schedule</a>
+                        
+                        </div>
+                    <div class="tab-contents" id="education">
+                        <h3>Course Fees</h3> <br>
+                        <h4>Online</h4><p>300$</p> <br>
+                        <h4>On Campus</h4> <p>500$</p> <br>
+                        <h4>Online + On Campus</h4><p>700$</p> 
+                    
+                    <a href="cscss.html" class="btn">Courses Schedule</a>
+            </div>
+             </div>
+            </div>
+             <script>
+                var tablinks = document.getElementsByClassName("tab-links");
+                var tabcontents = document.getElementsByClassName("tab-contents");
+                function opentab(tabname){
+                    for(tablink of tablinks){
+                        tablink.classList.remove("active-link");
+                    }
+                    for(tabcontent of tabcontents){
+                        tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+            
+            </script>
+<!---------------footer-------------->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4> Quick Links </h4>
+                    <ul>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>   
+            </div>
+            <div class="footer-col">
+                <h4> Social Media </h4>
+                    <div class="scoial-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <P>Copyright © MinTheim made with Visual Studio Code.</P>
+        </div>
+</footer>
+</body>
+</html>
+
+
+<div class="tab-titles">
+    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+    <p class="tab-links"onclick="opentab('education')">Education</p>
+    <p class="tab-links"onclick="opentab('language')">Language</p>
+</div>
+<div class="tab-contents active-tab" id="skills">
+    <ul>
+        <li><span>Web Developmet</span><br>Building Websites</li>
+        <li><span>App Developmet</span><br>Building Andriod/iOS apps</li>
+    </ul>
+</div>
+<div class="tab-contents" id="education">
+    <ul>
+        <li><span>2022(Current)</span><br>Pearson BTEC Level 4 Higher National Diploma in Computing</li>
+        <li><span>2021-2022</span><br>Pearson BTEC Level 3 Foundation Intenational Diploma in IT</li>
+    </ul>
+</div>
+<div class="tab-contents" id="language">
+    <ul>
+        <li><span>Myanmaer(Burmese)</span><br>Native</li>
+        <li><span>English</span><br>Fluency in English</li>
+    </ul>
+</div>
+</div>
+</div>

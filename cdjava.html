@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title> ABC Learning Center </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/e57e6433be.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e57e6433be.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a>
+                  <ul class="dropdown">
+                    <li><a href="cdhtml.html">HTML</a></li>
+                    <li><a href="cdcss.html">CSS</a></li>
+                    <li><a href="cdjs.html">JavaScript</a></li>
+                    <li><a href="cdjs.html">Java</a></li>
+                    <li><a href="cdph.html">Python</a></li>
+                    <li><a href="cdxls.html">Excel</a></li>
+                  </ul>
+                </li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="login.html">Log In</a></li>
+            </ul>
+          </nav>
+<!-------------------course detail----------------------->
+<div id="about">
+    <div class="container">
+            <h1 class="sub-title">Course Detail</h1> <br> <br>
+            <iframe width="1520" height="670"
+             src="https://www.youtube.com/embed/A74TOX803D0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+             <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Detail</p>
+                <p class="tab-links"onclick="opentab('education')">Course Fees</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+            <h3>Details</h3>
+            <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA),
+                meaning that compiled Java code can run on all platforms that support Java without the need to recompile. Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of the underlying computer architecture. 
+                The syntax of Java is similar to C and C++, but has fewer low-level facilities than either of them.</p> <br>
+                <p> The Java runtime provides dynamic capabilities (such as reflection and runtime code modification) that are typically not available in traditional compiled languages. As of 2019, Java was one of the most popular programming languages in use according to GitHub,[citation not found] particularly for client-server web applications, with a reported 9 million developers.</p> <br>
+                <p>Java was originally developed by James Gosling at Sun Microsystems. It was released in May 1995 as a core component of Sun Microsystems' Java platform. The original and reference implementation Java compilers, virtual machines, and class libraries were originally released by Sun under proprietary licenses. </p> <br>
+            
+                <a href="csjava.html" class="btn">Courses Schedule</a>
+
+            </div>
+            <div class="tab-contents" id="education">
+            <h3>Course Fees</h3> <br>
+            <h4>Online</h4><p>300$</p> <br>
+            <h4>On Campus</h4> <p>500$</p> <br>
+            <h4>Online + On Campus</h4><p>700$</p> 
+                    <a href="csjava.html" class="btn">Courses Schedule</a>
+            </div>
+            </div>
+            <script>
+                var tablinks = document.getElementsByClassName("tab-links");
+                var tabcontents = document.getElementsByClassName("tab-contents");
+                function opentab(tabname){
+                    for(tablink of tablinks){
+                        tablink.classList.remove("active-link");
+                    }
+                    for(tabcontent of tabcontents){
+                        tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+            
+            </script>
+<!---------------footer-------------->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4> Quick Links </h4>
+                    <ul>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>   
+            </div>
+            <div class="footer-col">
+                <h4> Social Media </h4>
+                    <div class="scoial-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <P>Copyright © MinTheim made with Visual Studio Code.</P>
+        </div>
+</footer>
+</body>
+</html>
+
